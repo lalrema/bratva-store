@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BRATVA</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">  
+                <i class="fa fa-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">SHOP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+            <h1>Contact Us</h1>
+    </section>
+    
+    
+<!------- Contact Us ------->
+
+    
+    
+    <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    
+                    <div>
+                        <i class="fa fa-whatsapp"></i>
+                        <span>
+                            <h5>+91 9774152948</h5>
+                            <p>Monday to Saturday 10 Am to 6 Pm</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>kayoralte@gmail.com</h5>
+                            <p>Email us your query</p>
+                             </span>
+                           
+                        
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form action="https://formspree.io/f/moqbjlba" method="POST">
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form> 
+                </div>
+            </div>
+    </section>
+    
+<!-------- footer ---------->
+
+
+<section class="footer">
+        <h4>About Us</h4>
+        <p>BRATVA ESTD 2020</p>
+        <div class="icons">
+              <a href="https://www.facebook.com/lalremruata.rema.921"><i class="fa fa-facebook"></i></a>
+               <a href="https://youtube.com/channel/UC1smcMSh7NHTFR3mLvq7pIA?sub_confirmation=1"><i class="fa fa-youtube-play"></i></a>
+            <a href="https://instagram.com/bratva__store?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+            <a href="https://chat.whatsapp.com/J6zWYJKCzdrJab6WiAm1Qa"><i class="fa fa-whatsapp"></i></a>
+        </div>
+       <a href="https://instagram.com/lalrema_19?igshid=YmMyMTA2M2Y=" class="footer-link"><p>by Mr.Black<i class="fa fa-heart-o"></i></p></a>
+</section>    
+  
+<!----JavaScript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script> 
+    
+</body>
+</html>    
